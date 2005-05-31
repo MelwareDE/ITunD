@@ -1,0 +1,16 @@
+CHANGES of ItunD
+=================
+
+v0.3
+- add new encap "zipip": rawip with compression.
+
+v0.2
+- don't do anything on HUP-signal if not connected
+- fixed data-sent handling (capi queue overflow)
+- new option "ifup" to call a specified script
+  with arguments dev-name and personal-name when
+  the interface was created and "ifconfig" can do "up"
+  on it.
+
+v0.1 initial version
+
