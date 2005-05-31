@@ -1,0 +1,62 @@
+
+                          ISDN-Tunnel-Daemon "itund" 
+                                License GNU GPL
+
+Copyright 2004-2005 SYSGO Real-Time Solutions AG
+Klein-Winternheim, Germany
+http://www.sysgo.com 
+http://www.elinos.com
+
+Copyright 2004-2005 Cytronics & Melware
+
+ItunD is a user-space daemon to provide a network tunnel over ISDN lines. It works
+similiar (and most important together with) the ISDN4Linux net-devices.
+The ISDN link is provided as just another "network-card" to the kernel and can
+be configured easily.
+To provide the needed network interface, the generic TUN/TAP driver of kernels
+2.4 and 2.6 is used. This driver is also used by vtun.sourceforge.net.
+
+
+Impotant Notes
+--------------
+
+1. User-Space daemon only, no kernel patches necessary.
+2. Options similar to PPPD CAPI options (pppdcapiplugin).
+3. Works with ISDN4Linux (isdn_net) network (e.g. rawip).
+
+
+Requirements
+------------
+
+1. ISDN card providing CAPI2.0 interface (Eicon Networks, AVM, ...)
+   The legacy isdn subsystem (isdn.o) is NOT necessary.
+2. Enabled (and loaded) Generic TUN/TAP network driver.
+
+
+Features
+--------
+
+When using itund on both sides, you may want to use encap "zipip"
+which is basically rawip, but compressed if possible.
+
+
+Examples
+========
+
+Callback Server (reject and call back)
+  itund --encap=rawip --controller=1 --protocol=hdlc \
+        --number=5678 --msn=1234 --demand --idle=60 \
+	--inmsn=1234 --coso=local --cbdelay=3
+
+Client (expecting callback)
+  itund --encap=rawip --controller=1 --protocol=hdlc \
+        --number=1234 --msn=5678 --demand --idle=60 \
+	--inmsn=5678 --coso=remote --dialtimeout=1
+
+
+
+
+armin.schindler@sysgo.com
+armin@melware.de
+
+$Id$
