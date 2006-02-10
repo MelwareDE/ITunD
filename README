@@ -2,12 +2,12 @@
                           ISDN-Tunnel-Daemon "itund" 
                                 License GNU GPL
 
-Copyright 2004-2005 SYSGO Real-Time Solutions AG
+Copyright 2004-2006 SYSGO Real-Time Solutions AG
 Klein-Winternheim, Germany
 http://www.sysgo.com 
 http://www.elinos.com
 
-Copyright 2004-2005 Cytronics & Melware
+Copyright 2004-2006 Cytronics & Melware
 
 ItunD is a user-space daemon to provide a network tunnel over ISDN lines. It works
 similiar (and most important together with) the ISDN4Linux net-devices.

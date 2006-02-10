@@ -1,13 +1,13 @@
 /*
  * ISDN tunnel Daemon "ItunD"
  *
- * Copyright 2004-2005 SYSGO Real-Time Solutions AG
+ * Copyright 2004-2006 SYSGO Real-Time Solutions AG
  * Klein-Winternheim, Germany
  * All rights reserved.
  *
  * Author: Armin Schindler <armin.schindler@sysgo.com>
  *
- * Copyright 2004-2005 Cytronics & Melware
+ * Copyright 2004-2006 Cytronics & Melware
  *
  * Armin Schindler <armin@melware.de>
  *
@@ -72,7 +72,7 @@ void die(int val)
  */
 static void usage(char *prg)
 {
-	fprintf(stderr, "ISDN-Tunnel Daemon Version %s (c) 2004-2005 Cytronics & Melware, SYSGO AG\n", VERSION);
+	fprintf(stderr, "ISDN-Tunnel Daemon Version %s (c) 2004-2006 Cytronics & Melware, SYSGO AG\n", VERSION);
 	fprintf(stderr, "usage: %s <option> <option> ...\n", prg);
 	fprintf(stderr, "options:\n");
 	fprintf(stderr, "   -D                   Don't daemonize into background\n");

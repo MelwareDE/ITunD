@@ -1,13 +1,13 @@
 /*
  * ISDN tunnel Daemon "ItunD"
  *
- * Copyright 2004-2005 SYSGO Real-Time Solutions AG
+ * Copyright 2004-2006 SYSGO Real-Time Solutions AG
  * Klein-Winternheim, Germany
  * All rights reserved.
  *
  * Author: Armin Schindler <armin.schindler@sysgo.com>
  *
- * Copyright 2004-2005 Cytronics & Melware
+ * Copyright 2004-2006 Cytronics & Melware
  *
  * Armin Schindler <armin@melware.de>
  *

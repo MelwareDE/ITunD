@@ -2,7 +2,7 @@
 # Makefile for ISDN Tunnel Daemon
 #
 
-VERSION=0.3
+VERSION=0.3.1
 
 PROG=itund
 
